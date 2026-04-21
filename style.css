@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "roboto";
+    src: url(/fonts/webfontkit-20260415-021244/roboto-variablefont_wdthwght-webfont.woff) format(woff), 
+         url(/fonts/webfontkit-20260415-021244/roboto-variablefont_wdthwght-webfont.woff2) format(woff2);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'roboto';
+}
+
+.tablet {   
+    position: relative;
+    align-self: center;
+    color: white;
+    font-size: 40px;
+    top: 50px;
+    z-index: 2;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to bottom right, #0991b2 60% , white 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.profile1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 0;
+}
+
+.intro {
+    max-width: 50%;
+    background-color: white;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 20px;
+    padding: 20px;
+    z-index: 0;
+}
+
+.hicons {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+}
+
+.title {
+    align-self: flex-start;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cards {
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 450px));
+    grid-template-rows: repeat(2, minmax(400px, 500px));
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ptitle {
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pname {
+    font-size: 30px;
+}
+
+.pdescription {
+    font-size: 20px;
+    align-self: center;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: #0991b2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer > img {
+    max-width: 40%;
+    padding: 30px;
+}
+
+footer > div > div {
+    display: flex;
+    font-size: 20px;
+}
+
+footer > div > div > svg {
+    margin-right: 10px;
+}
+
+footer > div > div > i {
+    font-size: 30px;
+    display: flex;
+    margin-right: 5px;
+}
