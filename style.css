@@ -35,13 +35,21 @@ header {
 .profile1 {
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 30%;
+    max-width: 35%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 0;
 }
 
+.profile1 {
+    width: 100%;
+}
+
+.proname {
+
+}
+
 .intro {
-    max-width: 50%;
+    max-width: 45%;
     background-color: white;
     align-self: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -74,7 +82,7 @@ main {
 }
 
 .cards {
-    align-self: flex-start;
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 450px));
     grid-template-rows: repeat(2, minmax(400px, 500px));
@@ -94,22 +102,31 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap:20px;
 }
 
 .ptitle {
     padding-left: 20px;
     padding-right: 10px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    max-width: 90%;
 }
 
 .pname {
     font-size: 30px;
 }
 
+.picon {
+    padding: 10px;
+}
+
 .pdescription {
     font-size: 20px;
     align-self: center;
+    padding: 20px;
+    max-width: 80%;
 }
 
 svg {
@@ -121,12 +138,14 @@ footer {
     background-color: #0991b2;
     display: flex;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 footer > div {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 50%;
 }
 
 footer > img {
@@ -147,4 +166,64 @@ footer > div > div > i {
     font-size: 30px;
     display: flex;
     margin-right: 5px;
+}
+
+/* media query + img add responsive  */
+
+@media (width < 1200px) {
+    .cards {
+        grid-template-columns:repeat(2, minmax(250px, 300px)) ;
+        grid-template-rows:repeat(3, minmax(300px, 400px)) ;
+    }
+    
+    .description {
+        gap: 0px;
+    }
+
+    .ptitle {
+        padding-top: 10px;
+    }
+}
+
+@media (width < 600px) {
+    .hcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile1 {
+        max-width: 70%;
+        align-self: center;
+    }
+
+    .intro {
+        max-width: 60%;
+        align-self: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        align-self: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer > div {
+        align-self: center;
+    }
+
+    footer > img {
+        align-self: center;
+        max-width: 60%;
+    }
 }
