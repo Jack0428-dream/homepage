@@ -163,6 +163,33 @@ footer > div > div > i {
 /* media query + img add responsive  */
 
 @media (width < 1200px) {
+    header {
+        display: inline-block;
+        padding: 40px;
+    }
+
+    .imgwrapper {
+        float: left;
+        margin: 40px;
+        max-width: 30%;
+    }
+
+    .profile1 {
+        transform: scaleY(1.5);
+    }
+
+    .name {
+        color: black;
+        top: 1em;
+        left: 7em;
+    }
+
+    .intro {
+        max-width: 50%;
+        margin: auto;
+        z-index: 1;
+    }
+
     .cards {
         grid-template-columns:repeat(2, minmax(250px, 300px)) ;
         grid-template-rows:repeat(3, minmax(300px, 400px)) ;
@@ -178,29 +205,34 @@ footer > div > div > i {
 }
 
 @media (width < 600px) {
-    .hcontainer {
+    header {
+        padding: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .profile1 {
-        position: static;
-        visibility: visible;
-        max-width: 70%;
+    .imgwrapper {
+        float: unset;
+        margin: 70px;
         align-self: center;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile1 {
+        transform: scaleY(1.5);
+    }
+
+    .name {
+        color: white;
+        top: 9em;
+        left: 3em;
     }
 
     .intro {
-        max-width: 60%;
         align-self: center;
-        bottom: 0px;
-        left: 0px;
-    }
-
-    .iprofile {
-        position: absolute;
-        visibility: hidden;
     }
 
     .cards {
