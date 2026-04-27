@@ -11,47 +11,50 @@ body {
 }
 
 header {
-    width: 100%;
-    background: linear-gradient(to bottom right, #0991b2 60% , white 40%);
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.hcontainer {
     display: flex;
     justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom right, #0991b2 60% , white 40%);
+}
+
+.imgwrapper {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
 }
 
 .profile1 {
-    z-index: 2;
-    margin-top: 30px;
-    margin-bottom: 30px; 
-    max-width: 40%;
-    box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 10px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 10px;;
 }
 
 .intro {
-    max-width: 45%;
-    background-color: white;
-    align-self: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 20px;
+    max-width: 40%;
+    height: 60%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 10px 10px 10px;;
     padding: 30px;
-    position: relative;
-    right: 10px;
-    max-height: 500px;
+    align-self: center;
 }
 
-.introduction > div > div {
+.hicon {
     font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.hicons {
-    font-size: 25px;
     display: flex;
     justify-content: flex-end;
-    gap: 5px;
+    gap: 7px;
+}
+
+.name {
+    position: absolute;
+    color: aliceblue;
+    align-self: center;
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, 0.24) 3px 3px 3px;
+    top: 420px;
 }
 
 main {
